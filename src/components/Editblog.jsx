@@ -37,7 +37,7 @@ const Editblog = () => {
   const updateForm = () => (
     <form onSubmit={submitForm}>
       <div className="form-group">
-        <label>ชื่อบทความ</label>
+        <label>Title</label>
         <input
           type="text"
           className="form-control"
@@ -46,7 +46,7 @@ const Editblog = () => {
         />
       </div>
       <div className="form-group">
-        <label>รายละเอียด</label>
+        <label>Content</label>
         <ReactQuill
           value={content}
           onChange={submitContent}
@@ -56,7 +56,7 @@ const Editblog = () => {
         />
       </div>
       <div className="form-group">
-        <label>ผู้แต่ง</label>
+        <label>Author</label>
         <input
           type="text"
           className="form-control"
@@ -65,7 +65,7 @@ const Editblog = () => {
         />
       </div>
       <br />
-      <input type="submit" value="บันทึก" className="btn btn-primary" />
+      <input type="submit" value="Save" className="btn btn-primary" />
     </form>
   );
 
