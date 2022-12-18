@@ -26,7 +26,7 @@ const Logincomp = () => {
       })
       .then((response) => {
         authenticate(response, () => navigate("/"));
-        refresh()
+        refresh(response);
       })
       .catch((err) => {
         Swal.fire("Warning!!", err.response.data.error, "error");
