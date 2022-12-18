@@ -12,7 +12,8 @@ const Myroutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path="/" exact element={<App />} />
+        <Route path="/" exact element={<App />} />
+        {user && <Route path="/login" element={<Navigate replace to="/" />} />}
         {!user && (
           <Route path="/create" element={<Navigate replace to="/login" />} />
         )}
@@ -23,11 +24,9 @@ const Myroutes = () => {
             element={<Navigate replace to="/login" />}
           />
         )}
-        {/* {user && <Route path="/login" element={<Navigate replace to="/" />} />} */}
         <Route path="/login" exact element={<Logincomp />} />
         <Route path="/getblog/edit/:id" element={<Editblog />} />
         <Route path="/getblog/:id" exact element={<Singleblog />} />
-        
       </Routes>
     </BrowserRouter>
   );
