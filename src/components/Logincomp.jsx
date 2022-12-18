@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 import Swal from "sweetalert2";
-import { authenticate, getUser } from "../../services/authorize";
+import { authenticate, refresh } from "../../services/authorize";
 import { useNavigate } from "react-router-dom";
 
 const Logincomp = () => {
@@ -26,6 +26,7 @@ const Logincomp = () => {
       })
       .then((response) => {
         authenticate(response, () => navigate("/"));
+        refresh()
       })
       .catch((err) => {
         Swal.fire("Warning!!", err.response.data.error, "error");

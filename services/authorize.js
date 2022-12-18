@@ -6,6 +6,12 @@ export const authenticate = (response, next) => {
   next();
 };
 
+export const refresh = () => {
+  if (window !== "undefined") {
+    window.location.reload();
+  }
+};
+
 export const getToken = () => {
   if (window !== "undefined") {
     if (sessionStorage.getItem("token")) {
