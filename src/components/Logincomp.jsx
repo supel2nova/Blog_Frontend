@@ -33,9 +33,9 @@ const Logincomp = () => {
       });
   };
 
-  useEffect(() => {
-    getUser() && navigate("/");
-  }, []);
+  // useEffect(() => {
+  //   getUser() && navigate("/");
+  // }, []);
 
   return (
     <div className="container p-5">
