@@ -23,7 +23,7 @@ const Singleblog = () => {
           <h1>{blog.title}</h1>
           <div>{parse(blog.content)}</div>
           <p className="text-muted">
-            ผู้เขียน: {blog.author}, เผยแพร่ :
+            Author : {blog.author}, Publish :
             {new Date(blog.createdAt).toLocaleString()}
           </p>
         </div>
