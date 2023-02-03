@@ -34,9 +34,9 @@ export const getUser = () => {
 
 export const logout = (next) => {
   if (window !== "undefined") {
+    window.location.href = "/";
     sessionStorage.removeItem("token");
     sessionStorage.removeItem("user");
-    window.location.reload();
   }
   next();
 };
