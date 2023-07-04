@@ -9,6 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <MessengerCustomerChat
       pageId="101439554570293"
       appId="195438366825122"
+      loggedInGreeting="ดีจ้า"
     />
     ,
     <Myroutes />
