@@ -13,25 +13,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       loggedInGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
       loggedOutGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
       greetingDialogDisplay={"show"}
-      debugMode={true}
-      onMessengerShow={() => {
-        console.log("onMessengerShow");
-      }}
-      onMessengerHide={() => {
-        console.log("onMessengerHide");
-      }}
-      onMessengerDialogShow={() => {
-        console.log("onMessengerDialogShow");
-      }}
-      onMessengerDialogHide={() => {
-        console.log("onMessengerDialogHide");
-      }}
-      onMessengerMounted={() => {
-        console.log("onMessengerMounted");
-      }}
-      onMessengerLoad={() => {
-        console.log("onMessengerLoad");
-      }}
     />
     <Myroutes />
   </React.StrictMode>
