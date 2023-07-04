@@ -8,7 +8,7 @@ import { MessengerChat } from "react-messenger-chat-plugin";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <MessengerChat
-      pageId="101439554570293"
+      pageId="1652647158184149"
       language="th_TH"
       loggedInGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
       loggedOutGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
