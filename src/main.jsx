@@ -10,10 +10,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <MessengerChat
       pageId="101439554570293"
       language="th_TH"
-      themeColor={"#000000"}
-      bottomSpacing={300}
       loggedInGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
-      loggedOutGreeting="loggedOutGreeting"
+      loggedOutGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
       greetingDialogDisplay={"show"}
       debugMode={true}
       onMessengerShow={() => {
