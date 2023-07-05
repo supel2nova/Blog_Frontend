@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Myroutes from "./Myroutes";
 import { MessengerChat } from "react-messenger-chat-plugin";
-const pageId = process.env.FACEBOOK_CHAT;
+const pageId = import.meta.env.FACEBOOK_CHAT;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+
   <React.StrictMode>
     <MessengerChat
       pageId={pageId}
