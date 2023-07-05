@@ -7,7 +7,7 @@ import { MessengerChat } from "react-messenger-chat-plugin";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <MessengerChat
-       pageId={`${import.meta.env.FACEBOOK_CHAT}`}
+       pageId={import.meta.env.FACEBOOK_CHAT}
       language="th_TH"
       themeColor={"#ffb21d"}
       loggedInGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
