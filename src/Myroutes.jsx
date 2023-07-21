@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import Singleblog from "./components/Singleblog";
 import Editblog from "./components/Editblog";
 import Logincomp from "./components/Logincomp";
+import Test from "./components/Test";
 
 const Myroutes = () => {
   const user = sessionStorage.getItem("token");
@@ -25,6 +26,7 @@ const Myroutes = () => {
           />
         )}
         <Route path="/login" exact element={<Logincomp />} />
+        <Route path="/test" exact element={<Test />} />
         <Route path="/getblog/edit/:id" element={<Editblog />} />
         <Route path="/getblog/:id" exact element={<Singleblog />} />
       </Routes>
