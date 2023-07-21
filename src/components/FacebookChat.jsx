@@ -8,7 +8,7 @@ const FacebookChat = () => {
   const hasExport = window.location.pathname.includes("/getblog");
   return (
     <>
-      {hasExport && (
+      {hasExport ? null : (
         <MessengerChat
           pageId="101439554570293"
           language="th_TH"
