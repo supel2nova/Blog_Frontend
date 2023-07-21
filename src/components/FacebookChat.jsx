@@ -1,15 +1,16 @@
 import React from "react";
 import { MessengerChat } from "react-messenger-chat-plugin";
-import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const FacebookChat = () => {
-  const location = useLocation();
-  const hasExport = location.pathname.includes("/getblog");
+  // const location = useLocation();
+  // const hasExport = location.pathname.includes("/getblog");
   return (
     <>
-      {hasExport && (
-        <MessengerChat
+      {/* {hasExport && (
+       
+      )} */}
+       <MessengerChat
           pageId="101439554570293"
           language="th_TH"
           themeColor={"#ffb21d"}
@@ -17,7 +18,6 @@ const FacebookChat = () => {
           loggedOutGreeting="ยินดีต้อนรับสู่เว็บ insKru ค่ะ พบปัญหาเว็บไซต์ติดต่อได้ทางช่องทางนี้เลยค่า :)"
           greetingDialogDisplay={"show"}
         />
-      )}
     </>
   );
 };
