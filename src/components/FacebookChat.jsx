@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 const FacebookChat = () => {
   // const location = useLocation();
   // const hasExport = location.pathname.includes("/getblog");
-  const hasExport = window.location.pathname.includes("/getblog");
+  const hasExport = window.location.pathname.includes("/login");
   return (
     <>
       {hasExport ? null : (
